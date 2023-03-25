@@ -15,7 +15,7 @@ namespace Datos
             try
             {
                 string sql = "SELECT * FROM Cliente;";
-                using (MySqlConnection _Conexion = new MySqlConnection(CadenaConexion.Cadena))
+                using (MySqlConnection _Conexion = new MySqlConnection(CadenaConexion.cadena))
                 {
                     await _Conexion.OpenAsync();
                     using (MySqlCommand comando = new MySqlCommand(sql, _Conexion))
@@ -40,7 +40,7 @@ namespace Datos
             try
             {
                 string sql = "INSERT INTO Cliente VALUES (@Identidad, @Nombre, @Direccion, @Correo);";
-                using (MySqlConnection _Conexion = new MySqlConnection(CadenaConexion.Cadena))
+                using (MySqlConnection _Conexion = new MySqlConnection(CadenaConexion.cadena))
                 {
                     await _Conexion.OpenAsync();
                     using (MySqlCommand comando = new MySqlCommand(sql, _Conexion))
@@ -68,7 +68,7 @@ namespace Datos
             try
             {
                 string sql = "DELETE FROM Cliente WHERE Identidad = @Identidad;";
-                using (MySqlConnection _Conexion = new MySqlConnection(CadenaConexion.Cadena))
+                using (MySqlConnection _Conexion = new MySqlConnection(CadenaConexion.cadena))
                 {
                     await _Conexion.OpenAsync();
                     using (MySqlCommand comando = new MySqlCommand(sql, _Conexion))
@@ -94,7 +94,7 @@ namespace Datos
             try
             {
                 string sql = "SELECT * FROM Cliente WHERE Identidad = @Identidad;";
-                using (MySqlConnection _Conexion = new MySqlConnection(CadenaConexion.Cadena))
+                using (MySqlConnection _Conexion = new MySqlConnection(CadenaConexion.cadena))
                 {
                     await _Conexion.OpenAsync();
                     using (MySqlCommand comando = new MySqlCommand(sql, _Conexion))

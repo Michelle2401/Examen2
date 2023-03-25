@@ -75,6 +75,7 @@
             // 
             // IdentidadmaskedTextBox
             // 
+            this.IdentidadmaskedTextBox.Enabled = false;
             this.IdentidadmaskedTextBox.Location = new System.Drawing.Point(79, 33);
             this.IdentidadmaskedTextBox.Mask = "0000-0000-00000";
             this.IdentidadmaskedTextBox.Name = "IdentidadmaskedTextBox";
@@ -131,6 +132,7 @@
             // 
             // DescripcionSoluciontextBox
             // 
+            this.DescripcionSoluciontextBox.Enabled = false;
             this.DescripcionSoluciontextBox.Location = new System.Drawing.Point(291, 188);
             this.DescripcionSoluciontextBox.Name = "DescripcionSoluciontextBox";
             this.DescripcionSoluciontextBox.Size = new System.Drawing.Size(268, 25);
@@ -147,6 +149,7 @@
             // 
             // DescripcionProblematextBox
             // 
+            this.DescripcionProblematextBox.Enabled = false;
             this.DescripcionProblematextBox.Location = new System.Drawing.Point(291, 141);
             this.DescripcionProblematextBox.Name = "DescripcionProblematextBox";
             this.DescripcionProblematextBox.Size = new System.Drawing.Size(268, 25);
@@ -163,6 +166,7 @@
             // 
             // TipoSoportetextBox
             // 
+            this.TipoSoportetextBox.Enabled = false;
             this.TipoSoportetextBox.Location = new System.Drawing.Point(497, 57);
             this.TipoSoportetextBox.Name = "TipoSoportetextBox";
             this.TipoSoportetextBox.Size = new System.Drawing.Size(358, 25);
@@ -186,6 +190,7 @@
             // 
             // CostotextBox
             // 
+            this.CostotextBox.Enabled = false;
             this.CostotextBox.Location = new System.Drawing.Point(66, 94);
             this.CostotextBox.Name = "CostotextBox";
             this.CostotextBox.Size = new System.Drawing.Size(269, 25);
@@ -193,6 +198,7 @@
             // 
             // IdtextBox
             // 
+            this.IdtextBox.Enabled = false;
             this.IdtextBox.Location = new System.Drawing.Point(67, 23);
             this.IdtextBox.Name = "IdtextBox";
             this.IdtextBox.Size = new System.Drawing.Size(268, 25);
@@ -278,7 +284,6 @@
             this.Eliminarbutton.TabIndex = 19;
             this.Eliminarbutton.Text = "Eliminar";
             this.Eliminarbutton.UseVisualStyleBackColor = false;
-           
             // 
             // Nuevobutton
             // 

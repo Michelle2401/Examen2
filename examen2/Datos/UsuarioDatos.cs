@@ -15,14 +15,14 @@ namespace Datos
             try
             {
                 string sql = "SELECT 1 FROM Usuario WHERE Codigo = @Codigo AND Contraseña = @Contraseña";
-                using (MySqlConnection _Conexion = new MySqlConnection(CadenaConexion.Cadena))
+                using (MySqlConnection _Conexion = new MySqlConnection(CadenaConexion.cadena))
                 {
                     await _Conexion.OpenAsync();
                     using (MySqlCommand comando = new MySqlCommand(sql, _Conexion))
                     {
                         comando.CommandType = System.Data.CommandType.Text;
                         comando.Parameters.Add("@Codigo", MySqlDbType.VarChar, 50).Value = codigo;
-                        comando.Parameters.Add("@Clave", MySqlDbType.VarChar, 45).Value = clave;
+                        comando.Parameters.Add("@Correo", MySqlDbType.VarChar, 45).Value = clave;
 
                         Valido = Convert.ToBoolean(await comando.ExecuteScalarAsync());
                     }
@@ -41,7 +41,7 @@ namespace Datos
             try
             {
                 string sql = "SELECT * FROM Usuario;";
-                using (MySqlConnection _Conexion = new MySqlConnection(CadenaConexion.Cadena))
+                using (MySqlConnection _Conexion = new MySqlConnection(CadenaConexion.cadena))
                 {
                     await _Conexion.OpenAsync();
                     using (MySqlCommand comando = new MySqlCommand(sql, _Conexion))
@@ -66,7 +66,7 @@ namespace Datos
             try
             {
                 string sql = "INSERT INTO Usuario VALUES (@Codigo, @Nombre, @Correo, @Contraseña);";
-                using (MySqlConnection _Conexion = new MySqlConnection(CadenaConexion.Cadena))
+                using (MySqlConnection _Conexion = new MySqlConnection(CadenaConexion.cadena))
                 {
                     await _Conexion.OpenAsync();
                     using (MySqlCommand comando = new MySqlCommand(sql, _Conexion))
@@ -94,7 +94,7 @@ namespace Datos
             try
             {
                 string sql = "DELETE FROM Usuario WHERE Codigo = @Codigo;";
-                using (MySqlConnection _Conexion = new MySqlConnection(CadenaConexion.Cadena))
+                using (MySqlConnection _Conexion = new MySqlConnection(CadenaConexion.cadena))
                 {
                     await _Conexion.OpenAsync();
                     using (MySqlCommand comando = new MySqlCommand(sql, _Conexion))

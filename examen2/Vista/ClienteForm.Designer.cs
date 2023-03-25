@@ -85,6 +85,7 @@
             // 
             // NombretextBox
             // 
+            this.NombretextBox.Enabled = false;
             this.NombretextBox.Location = new System.Drawing.Point(82, 62);
             this.NombretextBox.Name = "NombretextBox";
             this.NombretextBox.Size = new System.Drawing.Size(213, 25);
@@ -92,6 +93,7 @@
             // 
             // DirecciontextBox
             // 
+            this.DirecciontextBox.Enabled = false;
             this.DirecciontextBox.Location = new System.Drawing.Point(82, 116);
             this.DirecciontextBox.Name = "DirecciontextBox";
             this.DirecciontextBox.Size = new System.Drawing.Size(213, 25);
@@ -99,6 +101,7 @@
             // 
             // CorreotextBox
             // 
+            this.CorreotextBox.Enabled = false;
             this.CorreotextBox.Location = new System.Drawing.Point(82, 163);
             this.CorreotextBox.Name = "CorreotextBox";
             this.CorreotextBox.Size = new System.Drawing.Size(213, 25);
@@ -106,6 +109,7 @@
             // 
             // IdentidadmaskedTextBox
             // 
+            this.IdentidadmaskedTextBox.Enabled = false;
             this.IdentidadmaskedTextBox.Location = new System.Drawing.Point(82, 21);
             this.IdentidadmaskedTextBox.Mask = "0000-0000-00000";
             this.IdentidadmaskedTextBox.Name = "IdentidadmaskedTextBox";
@@ -127,6 +131,7 @@
             // Eliminarbutton
             // 
             this.Eliminarbutton.BackColor = System.Drawing.Color.OrangeRed;
+            this.Eliminarbutton.Enabled = false;
             this.Eliminarbutton.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Eliminarbutton.Location = new System.Drawing.Point(136, 222);
             this.Eliminarbutton.Name = "Eliminarbutton";
@@ -139,6 +144,7 @@
             // Guardarbutton
             // 
             this.Guardarbutton.BackColor = System.Drawing.Color.OrangeRed;
+            this.Guardarbutton.Enabled = false;
             this.Guardarbutton.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Guardarbutton.Location = new System.Drawing.Point(218, 223);
             this.Guardarbutton.Name = "Guardarbutton";
@@ -151,6 +157,7 @@
             // Cancelarbutton
             // 
             this.Cancelarbutton.BackColor = System.Drawing.Color.OrangeRed;
+            this.Cancelarbutton.Enabled = false;
             this.Cancelarbutton.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Cancelarbutton.Location = new System.Drawing.Point(300, 222);
             this.Cancelarbutton.Name = "Cancelarbutton";
